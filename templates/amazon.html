@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amazon Data</title>
+</head>
+<body>
+    <h1>Amazon Data</h1>
+    <ul>
+        {% for item in data %}
+            <li><a href="{{ item.link }}" target="_blank">{{ item.title }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html>
